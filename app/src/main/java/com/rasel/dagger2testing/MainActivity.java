@@ -20,9 +20,6 @@ public class MainActivity extends AppCompatActivity {
 
        // car = component.getCar();
 
-        engine = component.getEngine();
-        engine.run();
-
         car.drive();
     }
 }
