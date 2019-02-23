@@ -2,7 +2,7 @@ package com.rasel.dagger2testing;
 
 import dagger.Component;
 
-@Component
+@Component(modules = WheelsModule.class)
 public interface CarComponent {
 
     Car getCar();
