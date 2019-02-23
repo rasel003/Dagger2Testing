@@ -8,6 +8,7 @@ import javax.inject.Inject;
 public class MainActivity extends AppCompatActivity {
 
     @Inject Car car;
+    private Engine engine;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
        // car = component.getCar();
 
-        Engine engine = component.getEngine();
+        engine = component.getEngine();
         engine.run();
 
         car.drive();
